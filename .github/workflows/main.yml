@@ -1,0 +1,8 @@
+name: Kiem Tra Push
+on: [push] # Action se tu dong chay khi co lenh git push
+jobs:
+  log-result:
+    runs-on: ubuntu-latest
+    steps:
+      - name: In ra thong bao thanh cong
+        run: echo "Action da chay thanh cong sau khi push code!"
